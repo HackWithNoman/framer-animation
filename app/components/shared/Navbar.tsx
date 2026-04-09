@@ -3,8 +3,10 @@ import { Link } from "react-router";
 
 const navLinks = [
   { label: "Home", href: "/" },
-  { label: "Projects", href: "/projects" },
-  { label: "About", href: "/about" },
+  { label: "Projects", href: "#projects" },
+  { label: "Skills", href: "#skills" },
+  { label: "Blog", href: "/blog" },
+  { label: "About", href: "#about" },
 ];
 
 export function Navbar() {
@@ -43,11 +45,25 @@ export function Navbar() {
             onClick={() => setIsOpen(!isOpen)}
             className="rounded-lg border-2 border-blue-950 bg-stone-100 p-2 md:hidden"
           >
-            <svg className="h-6 w-6 text-blue-950" fill="none" viewBox="0 0 24 24" strokeWidth={3} stroke="currentColor">
+            <svg
+              className="h-6 w-6 text-blue-950"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth={3}
+              stroke="currentColor"
+            >
               {isOpen ? (
-                <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M6 18L18 6M6 6l12 12"
+                />
               ) : (
-                <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                />
               )}
             </svg>
           </button>

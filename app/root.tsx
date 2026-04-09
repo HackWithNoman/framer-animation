@@ -8,8 +8,8 @@ import {
 } from "react-router";
 
 import type { Route } from "./+types/root";
-import { Footer } from "./components/Footer";
-import { Navbar } from "./components/Navbar";
+import { Footer } from "./components/shared/Footer";
+import { Navbar } from "./components/shared/Navbar";
 import "./app.css";
 
 export const links: Route.LinksFunction = () => [
